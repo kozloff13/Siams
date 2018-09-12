@@ -23,7 +23,7 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
 
         //парсинг json
-        JsonReader reader = new JsonReader(new FileReader("/com/customers.json"));
+        JsonReader reader = new JsonReader(new FileReader("customers.json"));
         Type CustType = new TypeToken<List<Customer>>(){}.getType();
         Gson gson = new Gson();
         List<Customer> custDataDes = gson.fromJson(reader, CustType);
