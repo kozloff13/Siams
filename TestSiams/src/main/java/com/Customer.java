@@ -1,3 +1,5 @@
+package com;
+
 public class Customer {
 
     public String id;
